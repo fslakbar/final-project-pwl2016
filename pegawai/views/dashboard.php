@@ -123,7 +123,7 @@
                               </ul>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="logout.php">
                                 Log out
                             </a>
                         </li>
@@ -373,7 +373,7 @@
 
         	$.notify({
             	icon: 'pe-7s-user',
-            	message: "Welcome admin, How's your day?"
+            	message: "Welcome <?php echo $login_session; ?>, How's your day?"
 
             },{
                 type: 'info',

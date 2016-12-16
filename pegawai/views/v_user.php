@@ -122,7 +122,7 @@
                               </ul>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="logout.php">
                                 Log out
                             </a>
                         </li>
