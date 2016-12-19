@@ -11,7 +11,7 @@ session_start();// Memulai Session
 $user_check=$_SESSION['login_user'];
 
 // Ambil nama karyawan berdasarkan username karyawan dengan mysql_fetch_assoc
-$ses_sql=mysql_query("select nama from pegawai where username='$user_check'", $connection);
+$ses_sql=mysql_query("select nama from admin where username='$user_check'", $connection);
 $row = mysql_fetch_assoc($ses_sql);
 $login_session =$row['nama'];
 

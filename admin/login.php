@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 		// Seleksi Database
 		$db = mysql_select_db("petshop", $connection);
 		// SQL query untuk memeriksa apakah karyawan terdapat di database?
-		$query = mysql_query("select * from pegawai where password='$password' AND username='$username'", $connection);
+		$query = mysql_query("select * from admin where password='$password' AND username='$username'", $connection);
 		$rows = mysql_num_rows($query);
 			if ($rows == 1) {
 				$_SESSION['login_user']=$username; // Membuat Sesi/session
