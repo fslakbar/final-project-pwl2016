@@ -17,7 +17,6 @@
                                     	<th>Tipe Service</th>
                                     	<th>No. Telp</th>
 										<th>Terima</th>
-										<th>Tolak</th>
                                     </thead>
                                     <tbody>
 										<?php $no=1;?>
@@ -33,9 +32,6 @@
 											<td><label class="checkbox">
                                                         <input type="checkbox" value="" data-toggle="checkbox">
                                                     </label></td>
-											<td><button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
-                                                        <i class="fa fa-times"></i>
-                                                    </button></td>
                                         </tr>
 										<?php $no++?>
 										<?php endforeach?>

@@ -58,12 +58,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="user.php">
-                        <i class="pe-7s-user"></i>
-                        <p>User</p>
-                    </a>
-                </li>
-                <li>
                     <a href="member.php">
                         <i class="pe-7s-users"></i>
                         <p>Member</p>
