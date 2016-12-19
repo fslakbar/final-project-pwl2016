@@ -6,5 +6,6 @@ require_once('models/m_booking.php');
 $booking = new Booking();
 
 $data['booking'] = $booking->readAllBooking();
+$data['page'] = "v_booking.php";
 
-require_once View::getView('v_booking.php', $data);
+require_once View::getView('dashboard.php', $data);

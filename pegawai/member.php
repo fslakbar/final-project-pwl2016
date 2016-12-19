@@ -6,5 +6,6 @@ require_once('models/m_member.php');
 $member = new Member();
 
 $data['member'] = $member->readAllMember();
+$data['page'] = "v_member.php";
 
-require_once View::getView('v_member.php', $data);
+require_once View::getView('dashboard.php', $data);
