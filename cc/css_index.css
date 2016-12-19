@@ -1,0 +1,341 @@
+
+				
+				.navbar-default{
+					background-color: transparent;
+					border: transparent;
+				}
+				.navbar-logo{
+					padding-top: 15px;
+					font-size: 26px;
+					font-weight: bold;
+					color: #fff;
+					letter-spacing: 3px;
+					
+				}
+				.navbar-logo:hover {
+						text-decoration: none !important;
+				}
+				.navbar-header{
+					margin-top: 10px;
+					
+				}
+				.nav li a{
+					color: #fff !important;
+					font-size: 13px;
+					font-weight: bold;
+					letter-spacing: 2px;
+				}
+				.nav a:hover{
+					color: #ffc80a !important;
+					background-color: #fff !important;
+				}
+				
+				
+				
+				/*This CSS for Responsive Website*/
+				.main-header{
+					background-color: #281f35;
+					background-size: cover;
+					-webkit-background-size: cover;
+					-mob-background-size: cover;
+					padding: 260px 25px;
+				}
+				.main-header .main-header-button button{
+					margin-top: 30px;
+					padding-top: 40px;
+				}
+				.main-header p{
+					color: #fff; 
+					font-size: 14px; 
+					letter-spacing: 3px;
+				}
+				.main-head-h1{
+					color: #fff;
+					font-size: 55px;
+					font-weight: bold;
+					letter-spacing: 5px;
+				}
+				
+				
+				
+				/* CSS for Login and Register */
+				.register-btn{
+					background-color: transparent;
+					color: #fff;
+					border: 1px solid #fff;
+					padding: 8px 25px;
+					margin-left: 10px;
+					font-weight: bold;
+				}
+				.register-btn:hover{
+					background-color: transparent;
+					color: #fff;
+					border: 1px solid #fff;
+					box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				}
+				.login-btn{
+					background-color: transparent;
+					color: #fff;
+					border: 1px solid #fff;
+					padding: 8px 25px;
+					margin-left: 10px;
+					font-weight: bold;
+				}
+				.logout-btn{
+					background-color: transparent;
+					color: #fff;
+					border: 1px solid #fff;
+					padding: 8px 34px;
+					margin-left: 10px;
+					font-weight: bold;
+				}
+				.logout-btn:hover{
+					background-color: transparent;
+					color: #fff;
+					border: 1px solid #fff;
+					box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				}
+				.login-btn:hover{
+					background-color: transparent;
+					color: #fff;
+					border: 1px solid #fff;
+					box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				}
+				.register-pet-btn{
+					background-color: transparent;
+					color: #fff;
+					border: 1px solid #fff;
+					padding: 8px 25px;
+					margin-left: 10px;
+					font-weight: bold;
+				}
+				.register-pet-btn:hover{
+					background-color: transparent;
+					color: #fff;
+					border: 1px solid #fff;
+					box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				}
+				
+				
+				
+				/* CSS for Page About Us */
+				.container-about{
+					padding: 100px 100px;
+					background-color: #f8f8f8;
+					background-size: cover;
+					-webkit-background-size: cover;
+					-mob-background-size: cover;		
+				}
+				.container-about h1{
+					padding-bottom: 40px;
+					font-weight: bold;
+						
+				}
+				.about_us_image img{
+					padding-bottom : 30px;
+				}
+				.container-about .about_us_image img{
+					height:230px;
+				}
+				.container-about i{
+					color: #ffc80a; 
+					font-size: 20px;
+				}
+				
+				
+				
+				/* CSS For Service */
+				.container-services{
+					padding: 100px 100px;
+					background-color: #291f37;
+					background-size: cover;
+					-webkit-background-size: cover;
+					-mob-background-size: cover;
+				}
+				.container-services .services-con i{
+					color: #3a3d4b; 
+					font-size: 26px; 
+					font-weight: bold;
+				}
+				.container-services .container{
+					padding-bottom: 100px;
+				}
+				.container-services h1{
+					padding-bottom: 40px;
+					color: #fff; 
+					font-weight: bold;
+				}
+				.services-con{
+					padding: 40px 40px;
+					background-color: #fff;
+					border-radius: 15px;
+				}
+				.btn-services-page{
+					background-color: #ffc80a;
+					color: #fff;
+					padding: 7px 20px;
+					font-size: 18px;
+					letter-spacing: 1px;
+					border: 1px solid #ffc80a;
+					text-align: center;
+					font-weight: bold;
+					margin-top: 15px;
+				}
+				.btn-services-page:hover{
+					color: #fff;
+					background-color: #ffd545;
+				}
+				.fa-heartbeat{
+					color : #3a3d4b;
+				}
+				
+				
+				
+				/* CSS For Portofolios */
+				.container-portofolio{
+					padding: 100px 100px;
+					background-color: #f8f8f8;
+					background-size: cover;
+					-webkit-background-size: cover;
+					-mob-background-size: cover;
+				}
+				.container-portofolio h1{
+					padding-bottom: 30px;
+					font-weight: bold;
+				}
+				.container-portofolio .portofolio-item img{
+					height: 250px; 
+					width: 100%;
+				}
+				.container-portofolio .portofolio-item i{
+					font-size: 20px;
+					color: #ffc80a;
+				}
+				.container-portofolio .container{
+					padding-bottom: 100px;
+				}
+				.item-div{
+					background-color: #ffc80a;
+					height: 300px;
+					
+				}
+				.portofolio-text{
+					 font-weight: bold;
+					 letter-spacing: 1px;
+				}
+				.btn-portofolio{
+					padding: 5px 5px;
+					background-color: #fff;
+					color: #ffc80a;
+					border: 1px solid #fff;
+					margin-top: 10px;
+					font-weight: bold;
+					border-radius: 10px;
+					letter-spacing: 1px;
+				}
+				
+				
+				
+				
+				/* CSS For Gallerys */
+				.container-gallery{
+					padding-bottom: 100px;
+					padding-top: 100px;
+					background-color: #281f35;
+					background-size: cover;
+					-webkit-background-size: cover;
+					-mob-background-size: cover;
+					border-bottom: 3px solid #ffc80a;
+				}
+				.container-gallery .container{
+					padding-right: 10px;
+					padding-left: 10px;
+					padding-bottom: 100px;
+				}
+				.container-gallery h1{
+					padding-bottom: 50px;
+					color: #fff;
+					font-weight: bold;
+				}
+				.itm-img{
+					float: left;
+					height: 195px;
+				}
+				.itm-img img{
+					display: block;
+					width: 285px;
+					height: 195px;
+				}
+				.itm-img img:hover{
+					opacity: 0.5;
+					height: 195px;
+				}
+				
+				
+				
+				
+				/* CSS For ContactUs Page */
+				.container-contactus{
+					padding: 100px 100px;
+					background-color: #091b27;
+				}
+				.container-contactus h1{
+					text-align: center; 
+					color: #fff;
+				}
+				.container-contactus i{
+					font-size: 40px; 
+					color: #ffc80a;
+				}
+				.container-contactus p{
+					color: #c8c8c8;
+					padding-bottom: 20px;
+				}
+				.container-contactus container{
+					padding-bottom: 100px;
+				}
+				.container-contactus h1{
+					padding-bottom: 50px;
+				}
+				
+				
+				
+				/* CSS For Footer Page */
+				.container-footer{
+					background-color: #091b27;
+					padding: 10px 50px;
+					border-top: 3px solid #ffc80a;
+				}
+				.footer-left{
+					text-align: left;
+					color: #ffffff;
+					padding-top: 8px;
+					font-size: 16px;
+				}
+				.footer-right{
+					text-align: right;
+					color: #ffffff;
+					padding-top: 8px;
+				}
+				.footer-icon{
+					color: #ffffff;
+					font-size: 20px;
+					letter-spacing: 2px;
+				}
+				.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-google-plus:hover, .fa-youtube:hover{
+					color: #ffd545;
+				}
+				
+				.modal .modal-content .modal-header{
+					background-color: #f8f8f8;
+					color: #ffc80a;
+				}
+				
+				.modal .modal-content .modal-body{
+					background-color: #281f35;
+					color: #ffffff;
+				}
+				
+				.modal .modal-content .modal-footer{
+					background-color: #f8f8f8;
+				}
