@@ -145,7 +145,7 @@
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="../index.php">
                                 Home
                             </a>
                         </li>
