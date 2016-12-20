@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2016 at 12:09 AM
+-- Generation Time: Dec 20, 2016 at 02:13 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -47,21 +47,22 @@ INSERT INTO `admin` (`username`, `password`) VALUES
 CREATE TABLE IF NOT EXISTS `hewan` (
   `id_hewan` int(5) NOT NULL AUTO_INCREMENT,
   `nama_hewan` varchar(20) NOT NULL,
-  `jml_hewan` int(3) NOT NULL,
-  `jenis_hewan` varchar(20) NOT NULL,
+  `jenis_hewan` enum('dog','cat','snake','fish','bird') NOT NULL,
   `usia` int(2) NOT NULL,
   PRIMARY KEY (`id_hewan`),
   KEY `nama_hewan` (`nama_hewan`),
   KEY `jenis_hewan` (`jenis_hewan`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `hewan`
 --
 
-INSERT INTO `hewan` (`id_hewan`, `nama_hewan`, `jml_hewan`, `jenis_hewan`, `usia`) VALUES
-(1, 'batsy', 1, 'anjing', 13),
-(2, 'doge', 1, 'kuciang', 5);
+INSERT INTO `hewan` (`id_hewan`, `nama_hewan`, `jenis_hewan`, `usia`) VALUES
+(1, 'batsy', 'cat', 13),
+(2, 'doge', 'dog', 5),
+(3, 'moon', 'bird', 5),
+(12, 'Nemo', 'fish', 12);
 
 -- --------------------------------------------------------
 
@@ -70,7 +71,7 @@ INSERT INTO `hewan` (`id_hewan`, `nama_hewan`, `jml_hewan`, `jenis_hewan`, `usia
 --
 
 CREATE TABLE IF NOT EXISTS `member` (
-  `id_member` int(5) NOT NULL AUTO_INCREMENT,
+  `id_member` int(5) NOT NULL,
   `username` varchar(15) NOT NULL,
   `password` varchar(15) NOT NULL,
   `nama` varchar(20) NOT NULL,
@@ -82,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `member` (
   UNIQUE KEY `username` (`username`),
   KEY `nama` (`nama`),
   KEY `no_hp` (`no_hp`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `member`
@@ -92,7 +93,9 @@ INSERT INTO `member` (`id_member`, `username`, `password`, `nama`, `jk`, `alamat
 (5, 'febri', 'febri', 'febriyanto', 'L', 'kalsel', 'febri@feb.com', 2147483647),
 (7, 'faisal', 'rahasia', 'faisal akbar', 'L', 'jogja', 'faishalike@gmail.com', 2147483647),
 (9, 'akbar', 'rahasia', 'm. akbar', 'L', 'jogja', 'faishalike@gmail.com', 2147483647),
-(10, 'joko', 'password', 'joko anwar', 'L', 'jakarta', 'jokoanwar@gmail.com', 2147483647);
+(10, 'joko', 'password', 'joko anwar', 'L', 'jakarta', 'jokoanwar@gmail.com', 2147483647),
+(11, 'rio', 'rio', 'rio tondo', 'L', 'klaten', 'kulitmanggis@asia.com', 2147483647),
+(12, 'rama', '123', 'Rama R', 'L', 'jalan nusa indah', 'rama123@gmail.com', 123456789);
 
 -- --------------------------------------------------------
 
@@ -130,33 +133,29 @@ CREATE TABLE IF NOT EXISTS `pemesanan` (
   `id_pemesanan` int(5) NOT NULL AUTO_INCREMENT,
   `id_member` int(5) NOT NULL,
   `id_hewan` int(5) NOT NULL,
-  `nama` varchar(20) NOT NULL,
-  `jenis_hewan` varchar(10) NOT NULL,
-  `nama_hewan` varchar(15) NOT NULL,
   `tanggal` date NOT NULL,
   `jenis_servis` varchar(15) NOT NULL,
   `tipe_servis` int(3) NOT NULL,
   `catatan` varchar(50) NOT NULL,
-  `no_hp` int(15) NOT NULL,
-  `action` enum('terima','tolak') DEFAULT NULL,
+  `pegawai` varchar(12) DEFAULT NULL,
   PRIMARY KEY (`id_pemesanan`),
   KEY `id` (`id_member`),
   KEY `id_hewan` (`id_hewan`),
-  KEY `jenis_hewan` (`jenis_hewan`),
-  KEY `nama_hewan` (`nama_hewan`),
-  KEY `nama` (`nama`),
-  KEY `no_hp` (`no_hp`),
   KEY `id_2` (`id_member`),
   KEY `id_3` (`id_member`),
   KEY `id_member` (`id_member`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `pemesanan`
 --
 
-INSERT INTO `pemesanan` (`id_pemesanan`, `id_member`, `id_hewan`, `nama`, `jenis_hewan`, `nama_hewan`, `tanggal`, `jenis_servis`, `tipe_servis`, `catatan`, `no_hp`, `action`) VALUES
-(1, 5, 1, 'faisalaaaa', 'anjing', 'doge', '2016-12-06', 'sadsa', 1, 'sadsadsa', 2147483647, 'terima');
+INSERT INTO `pemesanan` (`id_pemesanan`, `id_member`, `id_hewan`, `tanggal`, `jenis_servis`, `tipe_servis`, `catatan`, `pegawai`) VALUES
+(1, 5, 1, '2016-12-06', 'sadsa', 1, 'sadsadsa', '2'),
+(2, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', '2'),
+(3, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', NULL),
+(4, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', NULL),
+(5, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', NULL);
 
 --
 -- Constraints for dumped tables

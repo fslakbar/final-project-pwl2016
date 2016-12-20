@@ -20,6 +20,7 @@
 							<th>Jenis Service</th>
                             <th>Tipe Service</th>
                             <th>No. Telp</th>
+							<th>ID Pegawai bertugas</th>
                         </thead>
                                     <tbody>
 										<?php $no=1;?>
@@ -35,6 +36,7 @@
                                         	<td><?php echo $s['jenis_servis']?></td>
                                         	<td><?php echo $s['tipe_servis']?></td>
                                         	<td><?php echo $s['no_hp']?></td>
+                                        	<td><?php echo $s['pegawai']?></td>
                                         </tr>
 										<?php $no++?>
 										<?php endforeach?>
