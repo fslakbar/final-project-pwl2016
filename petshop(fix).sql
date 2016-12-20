@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2016 at 02:13 PM
+-- Generation Time: Dec 20, 2016 at 04:39 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`username`, `password`) VALUES
-('admin', 'admin');
+('admin', '21232f297a57a5a');
 
 -- --------------------------------------------------------
 
@@ -62,6 +62,7 @@ INSERT INTO `hewan` (`id_hewan`, `nama_hewan`, `jenis_hewan`, `usia`) VALUES
 (1, 'batsy', 'cat', 13),
 (2, 'doge', 'dog', 5),
 (3, 'moon', 'bird', 5),
+(4, 'bolt', 'dog', 7),
 (12, 'Nemo', 'fish', 12);
 
 -- --------------------------------------------------------
@@ -90,12 +91,12 @@ CREATE TABLE IF NOT EXISTS `member` (
 --
 
 INSERT INTO `member` (`id_member`, `username`, `password`, `nama`, `jk`, `alamat`, `email`, `no_hp`) VALUES
-(5, 'febri', 'febri', 'febriyanto', 'L', 'kalsel', 'febri@feb.com', 2147483647),
-(7, 'faisal', 'rahasia', 'faisal akbar', 'L', 'jogja', 'faishalike@gmail.com', 2147483647),
-(9, 'akbar', 'rahasia', 'm. akbar', 'L', 'jogja', 'faishalike@gmail.com', 2147483647),
-(10, 'joko', 'password', 'joko anwar', 'L', 'jakarta', 'jokoanwar@gmail.com', 2147483647),
-(11, 'rio', 'rio', 'rio tondo', 'L', 'klaten', 'kulitmanggis@asia.com', 2147483647),
-(12, 'rama', '123', 'Rama R', 'L', 'jalan nusa indah', 'rama123@gmail.com', 123456789);
+(5, 'febri', '4689c75fd0935ff', 'febriyanto ramadha', 'L', 'kalsel', 'febri@feb.com', 2147483647),
+(6, 'kadafi', '*8AA0704DB9B987', 'kadafi', 'L', 'bantar gebang', 'kadafi@msad.com', 2147483647),
+(7, 'faisal', 'ac43724f16e9241', 'faisal akbar', 'L', 'jogja', 'faishalike@gmail.com', 2147483647),
+(10, 'joko', '5f4dcc3b5aa765d', 'joko anwar', 'L', 'jakarta', 'jokoanwar@gmail.com', 2147483647),
+(11, 'rio', 'd5ed38fdbf28bc4', 'rio tondo', 'L', 'klaten', 'kulitmanggis@asia.com', 2147483647),
+(12, 'rama', '202cb962ac59075', 'Rama R', 'L', 'jalan nusa indah', 'rama123@gmail.com', 123456789);
 
 -- --------------------------------------------------------
 
@@ -120,7 +121,7 @@ CREATE TABLE IF NOT EXISTS `pegawai` (
 --
 
 INSERT INTO `pegawai` (`id_pegawai`, `username`, `password`, `nama`, `keahlian`, `jk`, `alamat`) VALUES
-(1, 'admin', 'rahasia', 'mimin ganteng', 'programer', 'L', NULL),
+(1, 'admin', 'admin', 'mimin ganteng', 'programer', 'L', 'cloud server'),
 (2, 'faisal', 'faisal', 'faisal', 'perkucingan', 'L', 'Magelang');
 
 -- --------------------------------------------------------
@@ -144,18 +145,19 @@ CREATE TABLE IF NOT EXISTS `pemesanan` (
   KEY `id_2` (`id_member`),
   KEY `id_3` (`id_member`),
   KEY `id_member` (`id_member`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `pemesanan`
 --
 
 INSERT INTO `pemesanan` (`id_pemesanan`, `id_member`, `id_hewan`, `tanggal`, `jenis_servis`, `tipe_servis`, `catatan`, `pegawai`) VALUES
-(1, 5, 1, '2016-12-06', 'sadsa', 1, 'sadsadsa', '2'),
+(1, 5, 3, '2016-12-06', 'sadsa', 1, 'sadsadsa', NULL),
 (2, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', '2'),
-(3, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', NULL),
-(4, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', NULL),
-(5, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', NULL);
+(3, 12, 2, '2016-12-30', 'treatment', 3, 'Tes', NULL),
+(4, 12, 12, '2016-12-30', 'treatment', 3, 'Tes', '2'),
+(5, 12, 1, '2016-12-30', 'treatment', 3, 'Tes', NULL),
+(6, 11, 4, '2016-12-31', 'treatment', 2, 'jangan kena sinar matahari', NULL);
 
 --
 -- Constraints for dumped tables
