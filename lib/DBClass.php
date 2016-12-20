@@ -24,7 +24,7 @@
 		
 		function __construct(){
 			$this->db = false;
-			$this->dbname = 'pwl2';
+			$this->dbname = 'petshop';
 			$this->host = 'localhost';
 			$this->user = 'root';
 			$this->password = '';

@@ -1,1 +1,1 @@
-<H1>Welcome to Employee Page</h1>
+<H2>Welcome <?php echo $username?> to Employee Page</h2>

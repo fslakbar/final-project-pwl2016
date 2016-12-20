@@ -20,6 +20,7 @@
 				<link rel="stylesheet" type="text/css" href="css/css_index.css">
 				
 				
+				<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 				<link rel="stylesheet" type="text/css" href="css/datepicker.css">
 				<script src="js/bootstrap-datepicker.js"></script>
 	</head>
@@ -392,22 +393,28 @@
 						<div class="modal-body">
 							<form class="col-md-12 center-block" action="edit_member.php" method="post">
 								<div class="form-group">
+									<input type="text" class="form-control input-lg" placeholder="Id Member" name="reg_id_member">
+								</div>
+								<div class="form-group">
 									<input type="text" class="form-control input-lg" placeholder="Username" name="reg_username">
 								</div>
 								<div class="form-group">
 									<input type="password" class="form-control input-lg" placeholder="Password" name="reg_password">
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control input-lg" placeholder="Full Name" name="reg_fullname">
+									<input type="text" class="form-control input-lg" placeholder="Name" name="reg_name">
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control input-lg" placeholder="Male or Female" name="reg_mf">
+									<select placeholder="Male or Female (L/P)" name="reg_mf" class="form-control input-lg">
+										<option value="L">Laki-Laki</option>
+										<option value="P">Perempuan</option>
+									</select>
 								</div>
 								<div class="form-group">
 									<input type="text" class="form-control input-lg" placeholder="Address" name="reg_address">
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control input-lg" placeholder="E-mail" name="reg_email">
+									<input type="text" class="form-control input-lg" placeholder="Email" name="reg_email">
 								</div>
 								<div class="form-group">
 									<input type="text" class="form-control input-lg" placeholder="Phone Number" name="reg_nohp">

@@ -4,7 +4,7 @@
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Daftar Pegawai</h4>
-                                <p class="category">     </p>
+                                <p class="category">   </p>
                             </div>
                             <div class="content table-responsive ">
                                 <table class="table table-hover table-striped table-bordered data">

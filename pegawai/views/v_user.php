@@ -11,43 +11,37 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label>ID Karyawan</label>
-                                                <input type="text" class="form-control" disabled placeholder="Company" value="<?php echo $data['st']['id_pegawai']?>">
+                                                <input type="text" class="form-control" disabled placeholder="Company" value="<?php echo $id_peg ?>">
                                             </div>
                                         </div>
 										<div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Username</label>
-                                                <input type="text" class="form-control" value="<?php echo $data['st']['username']?>">
+                                                <input type="text" class="form-control" disabled value="<?php echo $username?>">
                                             </div>
                                         </div> 
 									</div>
 									
                                     <div class="row">                                   
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Nama</label>
-                                                <input type="text" class="form-control" value="<?php echo $row['st']['nama']?>">
+                                                <input type="text" class="form-control" disabled value="<?php echo $login_session?>">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" placeholder="Email">
-                                            </div>
-                                        </div> 
                                     </div>                                    
 									
 									<div class="row">                                   
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Jenis Kelamin</label>
-                                                <input type="text" class="form-control" placeholder="" value="Laki-Laki">
+                                                <input type="text" class="form-control" placeholder="" disabled value="<?php echo $jk?>">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label>Keahlian</label>
-                                                <input type="text" class="form-control" placeholder="" value="Spesialis kucing">
+                                                <input type="text" class="form-control" placeholder="" disabled value="<?php echo $keahlian?>">
                                             </div>
                                         </div> 
                                     </div>
@@ -56,7 +50,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Address</label>
-                                                <input type="text" class="form-control" placeholder="Home Address" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09">
+                                                <input type="text" class="form-control" placeholder="Home Address" disabled value="<?php echo $alamat?>">
                                             </div>
                                         </div>
                                     </div>
@@ -65,14 +59,13 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>About Me</label>
-                                                <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                                <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">I'm sorry, I cant afford a ferrari, but that don't mean I cant get you there. Cause he's an xbox and I'm more like atari.</textarea>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <button type="submit" class="btn btn-info btn-fill pull-left">Edit Profile</button>               
+                                    <button type="submit" class="btn btn-info btn-fill pull-left"><a href="edit_user.php">Edit Profile</a></button>               
 									
-									<button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
@@ -86,16 +79,14 @@
                             <div class="content">
                                 <div class="author">
                                      <a href="#">
-                                    <img class="avatar border-gray" src="../assets/img/faces/face-3.jpg" alt="..."/>
+                                    <img class="avatar border-gray" src="../assets/img/faces/face-0.jpg" alt="..."/>
 
-                                      <h4 class="title">Mike Andrew<br />
-                                         <small>michael24</small>
+                                      <h4 class="title"><?php echo $login_session?><br />
+                                         <small><?php echo $username?></small>
                                       </h4>
                                     </a>
                                 </div>
-                                <p class="description text-center"> "Lamborghini Mercy <br>
-                                                    Your chick she so thirsty <br>
-                                                    I'm in that two seat Lambo"
+                                <p class="description text-center"> "I.m sorry, I cant afford a ferrari, but that don't mean I cant get you there. Cause he's an xbox and I'm more like atari"
                                 </p>
                             </div>
                             <hr>

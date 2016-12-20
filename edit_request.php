@@ -7,10 +7,8 @@ require_once('model/m_request.php');
 	$db = new DBClass();
 	
 	if(isset($_POST['request_submit'])){
-		
-	$nama         = $_POST['request_name'];
-	$jenis_hewan  = $_POST['request_pet_kind'];
-	$nama_hewan	  = $_POST['request_pet_name'];
+	$id_member    = $_POST['request_id_member'];
+	$id_hewan     = $_POST['request_id_hewan'];
 	$tanggal	  = $_POST['request_pet_calender'];
 	$jenis_servis = $_POST['request_pet_services'];
 	$tipe_servis  = $_POST['request_pet_type'];
@@ -20,7 +18,7 @@ require_once('model/m_request.php');
 	$tanggal = date('Y-m-d H:i:s', $phpdate);
 	
 	
-	$member->insertDataRequest($nama, $jenis_hewan, $nama_hewan, $tanggal, $jenis_servis, $tipe_servis, $catatan);
+	$member->insertDataRequest($id_member, $id_hewan, $tanggal, $jenis_servis, $tipe_servis, $catatan);
 	echo "Request is Complited";
 	}
 	

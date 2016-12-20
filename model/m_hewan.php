@@ -10,9 +10,9 @@ require_once('lib/DBClass.php');
 			$this->db = new DBClass();
 		}
 		
-		public function insertDataHewan($m_nama_hewan, $m_jml_hewan, $m_jenis_hewan, $m_usia){
-			$query = "insert into hewan(nama_hewan, jml_hewan, jenis_hewan, usia)
-				values('$m_nama_hewan', '$m_jml_hewan', '$m_jenis_hewan', '$m_usia')";
+		public function insertDataHewan($m_id_hewan, $m_nama_hewan, $m_jenis_hewan, $m_usia){
+			$query = "insert into hewan(id_hewan, nama_hewan, jenis_hewan, usia)
+				values('$m_id_hewan', '$m_nama_hewan', '$m_jenis_hewan', '$m_usia')";
 			$this->db->putRows($query);
 		}
 		
