@@ -441,13 +441,19 @@
 						<div class="modal-body">
 							<form class="col-md-12 center-block" action="edit_hewan.php" method="post">
 								<div class="form-group">
+									<input type="text" class="form-control input-lg" placeholder="Id Hewan" name="reg_id_hewan">
+								</div>
+								<div class="form-group">
 									<input type="text" class="form-control input-lg" placeholder="Pet Name" name="reg_pet_name">
 								</div>
 								<div class="form-group">
-									<input type="password" class="form-control input-lg" placeholder="The Number of Pets" name="reg_pet_number_pet">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control input-lg" placeholder="Types of Pets" name="reg_pet_type_pet">
+									<select class="form-control" id="pet_kind" name="req_pet_kind">
+											<option value="Dog">Dog</option>
+											<option value="Cat">Cat</option>
+											<option value="Bird">Bird</option>
+											<option value="Snake">Snake</option>
+											<option value="Fish">Fish</option>
+									</select>
 								</div>
 								<div class="form-group">
 									<input type="text" class="form-control input-lg" placeholder="Age Pets" name="reg_pet_age_pet">
@@ -479,31 +485,19 @@
 						<div class="modal-body">
 							<form class="form-horizontal" action="edit_request.php" method="post">
 								<div class="form-group">
-									<label class="control-label col-sm-2" for="req_name">Name:</label>
+									<label class="control-label col-sm-2" for="req_name">Id Member:</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" id="name_request" placeholder="Name" name="request_name">
+										<input type="text" class="form-control" id="id_member_request" placeholder="Id Member" name="request_id_member">
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="control-label col-sm-2" for="petname">Pet Name:</label>
+									<label class="control-label col-sm-2" for="req_name">Id Hewan:</label>
 									<div class="col-sm-10">
-										<input type="text" class="form-control" id="pet_name" placeholder="Pet Name" name="request_pet_name">
+										<input type="text" class="form-control" id="id_hewan_request" placeholder="Id Hewan" name="request_id_hewan">
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="control-label col-sm-2" for="petkind">Pet Kind:</label>
-									<div class="col-sm-10">
-										<select class="form-control" id="pet_kind" name="request_pet_kind">
-											<option value="Dog">Dog</option>
-											<option value="Cat">Cat</option>
-											<option value="Bird">Bird</option>
-											<option value="Snake">Snake</option>
-											<option value="Fish">Fish</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="control-label col-sm-2" for="calender">Calender</label>
+									<label class="control-label col-sm-2" for="calender">Calender:</label>
 									<div class="col-sm-10">
 										<div class="input-group date" data-provide="datepicker" id="datetimepicker1">
 											<input type='text' class="form-control" id="calender_req" name="request_pet_calender">
