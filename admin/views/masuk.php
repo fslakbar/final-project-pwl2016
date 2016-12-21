@@ -11,11 +11,11 @@ header("location: dashboard.php");
 <head>
   <meta charset="UTF-8">
   
-	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<link rel="icon" type="image/png" href="../assets/img/favicon.ico">
   <title>Login</title>
   
 
-      <link href="assets/css/style.css" rel="stylesheet" >
+      <link href="../assets/css/style.css" rel="stylesheet" >
 
   
 </head>
@@ -35,6 +35,7 @@ header("location: dashboard.php");
   </head>
 
   <body class="align">
+  	<h2 align="left">Admin Login</h2>
 
     <div class="grid">
 
@@ -57,7 +58,7 @@ header("location: dashboard.php");
 
       </form>
 
-      <!--<p class="text--center">Not a member? <a href="#">Sign up now</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#arrow-right"></use></svg></p>-->
+      <!--<p class="text--center">Not a member? <a href="#">Sign up now</a> <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/icons.svg#arrow-right"></use></svg></p>-->
 
     </div>
     

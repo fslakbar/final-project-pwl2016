@@ -3,8 +3,8 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="header">
-                    <h4 class="title">Daftar Booking</h4>
-                    <p class="category">    </p>
+                    <h4 class="title">Your Task</h4>
+                    <p class="category">  Berisi daftar order yang diambil  </p>
                 </div>
                 
 				<div class="content table-responsive ">
@@ -22,7 +22,7 @@
 							<th>ID Pegawai bertugas</th>
                         </thead>
                                     <tbody>
-										<?php foreach($data['booking'] as $s):?>
+										<?php foreach($data['order'] as $s):?>
                                         <tr>
                                         	<td><?php echo $s['id_pemesanan']?></td>
                                         	<td><?php echo $s['id_member']?></td>

@@ -35,6 +35,7 @@ header("location: dashboard.php");
   </head>
 
   <body class="align">
+  <h2>Employee Page</h2>
 
     <div class="grid">
 

@@ -56,6 +56,12 @@
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
                     </a>
+                </li>                    
+				<li>
+                    <a href="order.php">
+                        <i class="pe-7s-note2"></i>
+                        <p>Job list</p>
+                    </a>
                 </li>               
 				<li>
                     <a href="user.php">
@@ -145,7 +151,7 @@
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="../index.php">
+                            <a href="#">
                                 Home
                             </a>
                         </li>

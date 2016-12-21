@@ -19,7 +19,7 @@
 				<!--External Css-->
 				<link rel="stylesheet" type="text/css" href="css/css_index.css">
 				
-				
+				<link rel="icon" type="image/png" href="assets/img/favicon.ico">				
 				<link rel="stylesheet" type="text/css" href="css/datepicker.css">
 				<script src="js/bootstrap-datepicker.js"></script>
 	</head>
